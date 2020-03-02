@@ -1,0 +1,91 @@
+<DOCTYPE html>
+
+<head>
+    <title>Sssnake</title>
+    <style>
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+            -ms-box-orient: horizontal;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .flex-item1 {
+            flex: 2
+        }
+        .flex-item2 {
+            flex: 1;
+            margin-top: auto;
+        }
+</style>
+</head>
+
+<body>
+    <h1 class="heading">
+                ! ! ! Welcome to the snake game ! ! ! 
+            </h1>
+
+            <div class="flex-container longhand">
+                    <div class="flex-item1">
+                            <canvas id = "gameCanvas", width = "400", height = "400"></canvas>
+                    </div>
+
+                    <div class="flex-item2">
+                            <div style="height: 100 ; width: 150 ; border: 5px solid grey ">
+                                    <h3>
+                                        Your Score is . . . 
+                                        <h3 id="score_display"></h3>
+                                    </h3>
+                                    </div>
+
+                                    <div style="background-color: rgb(255, 255, 255) ; width:20 ; border: 1px solid grey; height: 20; margin-top: 10px"></div>
+                                    <p>
+                                        This is the snake.
+                                    </p>
+                                    <div style="background-color: lime ; width:20 ;border: 1px solid grey;  height: 20"></div>
+                                    <p>
+                                        This is the apple. You must eat these to win.
+                                    </p>
+                                    <div style="background-color: blue ; width:20 ;border: 1px solid grey;  height: 20"></div>
+                                    <p>
+                                        These are a pair of siccors that only come up when your snake has 10 or more blocks.
+                                    </p>
+                                    <div style="background-color: red ; width:20 ;border: 1px solid grey; height: 20"></div>
+                                    <p>
+                                        This is a bomb.
+                                    </p>
+                                    <div style="background-color: pink ; width:20 ;border: 1px solid grey; height: 20"></div>
+                                    <p>
+                                        This is a portal . . .
+                                    </p>
+                                    <div style="height: 75 ; width: 150 ; border: 5px solid red ">
+                                        <h3>
+                                            last score . . .
+                                        <h3 id="last_score"></h3>
+                                        </h3>
+                                    </div>
+                                    
+
+
+
+
+
+                    </div>
+            </div>
+
+
+            
+
+    
+    <!-- Import JS game file -->
+    <script type="text/javascript", src="snake_latest_version.js"></script>
+</div>
+</body>
+</html>
